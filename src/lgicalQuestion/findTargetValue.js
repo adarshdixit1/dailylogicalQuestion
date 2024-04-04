@@ -7,7 +7,7 @@ let targetValue = 6
 
 
 // solution 1
-const myfun = (ar, targetValue) => {
+ export const myfun = (ar, targetValue) => {
   let newarr = []
   for (i = 0; i < ar.length; i++) {
     let findValue =  ar[i] -targetValue
@@ -23,7 +23,7 @@ const myfun = (ar, targetValue) => {
 console.log(myfun(arr, targetValue))
 
 // solution 2
-const findValue=(value,a,index)=>{
+export const findValue=(value,a,index)=>{
   for(let i=0; i<value?.length; i++){
     if(index!=i){
     if(value[i]===a){
